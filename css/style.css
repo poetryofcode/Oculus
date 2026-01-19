@@ -23,3 +23,65 @@ button {
   border: 0;
   cursor: pointer;
 }
+
+body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Onest", sans-serif;
+}
+
+.container {
+  max-width: 1840px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 50px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.menu {
+  margin-right: auto;
+  margin-left: 157px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 40px;
+}
+
+.header__btn {
+  display: flex;
+  flex-direction: column;
+  width: 48px;
+  gap: 8px;
+  margin-left: 105px;
+}
+
+.header__btn span {
+  height: 2px;
+  background-color: #fff;
+}
+
+.menu__lang {
+  display: flex;
+  gap: 5px;
+}
+
+.top {
+  background-image: url("/images/bg.jpg");
+  height: 100vh;
+  /* background-repeat: no-repeat;
+  background-position: center; */
+}

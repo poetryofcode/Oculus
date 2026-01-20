@@ -85,3 +85,33 @@ body {
   /* background-repeat: no-repeat;
   background-position: center; */
 }
+
+.top__inner {
+  padding-top: 200px;
+  color: #fff;
+}
+
+.top__content {
+  display: flex;
+}
+
+.top__title {
+  font-size: 200px;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.top__title span {
+  display: block;
+  padding-left: 200px;
+}
+
+.top__slogan {
+}
+
+.top__text {
+  max-width: 368px;
+  text-align: right;
+  margin-left: auto;
+}

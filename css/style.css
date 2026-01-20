@@ -82,13 +82,16 @@ body {
 .top {
   background-image: url("/images/bg.jpg");
   height: 100vh;
-  /* background-repeat: no-repeat;
-  background-position: center; */
+  background-size: cover;
 }
 
 .top__inner {
   padding-top: 200px;
+  padding-bottom: 50px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .top__content {
@@ -107,11 +110,33 @@ body {
   padding-left: 200px;
 }
 
-.top__slogan {
-}
-
 .top__text {
   max-width: 368px;
   text-align: right;
   margin-left: auto;
+}
+
+.top__info {
+  display: flex;
+  margin-top: auto;
+}
+
+.top__explore {
+  margin-left: auto;
+}
+
+.top__info-list {
+  display: flex;
+  gap: 80px;
+  font-weight: 600;
+}
+
+dt {
+  font-size: 64px;
+  line-height: 70px;
+}
+
+dd {
+  font-size: 32px;
+  text-transform: capitalize;
 }

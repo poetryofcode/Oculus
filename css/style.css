@@ -79,6 +79,14 @@ body {
   gap: 5px;
 }
 
+.menu__link {
+  transition: all 0.5s;
+}
+
+.menu__link:hover {
+  color: #0082fb;
+}
+
 .top {
   background-image: url("/images/bg.jpg");
   height: 100vh;
@@ -119,6 +127,7 @@ body {
 .top__info {
   display: flex;
   margin-top: auto;
+  align-items: end;
 }
 
 .top__explore {
@@ -139,4 +148,49 @@ dt {
 dd {
   font-size: 32px;
   text-transform: capitalize;
+}
+
+.top__explore {
+  display: flex;
+  gap: 33px;
+  align-items: end;
+  margin-left: auto;
+}
+
+.top__explore-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 130, 251, 0.1) 20.19%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.7s;
+}
+
+.top__explore-btn:hover {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 130, 251, 0.1) 0%,
+    rgba(0, 130, 251, 0.6) 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+}
+
+.top__box {
+  width: 320px;
+  height: 320px;
+  background-color: rgba(5, 12, 60, 0.5);
+  border-radius: 20px;
+}
+
+#canvas {
+  background-color: transparent;
 }

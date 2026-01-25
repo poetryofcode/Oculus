@@ -163,25 +163,43 @@ dd {
   align-items: center;
   width: 150px;
   height: 150px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.top__explore-btn::before,
+.top__explore-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.top__explore-btn::before {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(0, 130, 251, 0.1) 20.19%,
     rgba(255, 255, 255, 0.6) 100%
   );
-  border-radius: 50%;
-  font-size: 24px;
-  color: #fff;
-  transition: all 0.7s;
+  transition: opacity 1s ease-in-out;
+  z-index: 1;
+  opacity: 1;
 }
 
-.top__explore-btn:hover {
+.top__explore-btn:hover::after {
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(0, 130, 251, 0.1) 0%,
     rgba(0, 130, 251, 0.6) 100%
   );
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transform: scale(1.1);
+  opacity: 1;
+}
+
+.top__explore-btn:hover::before {
+  opacity: 0;
 }
 
 .top__box {
@@ -189,6 +207,13 @@ dd {
   height: 320px;
   background-color: rgba(5, 12, 60, 0.5);
   border-radius: 20px;
+  position: relative;
+}
+
+.top__box-item {
+  position: absolute;
+  left: 38px;
+  top: 70px;
 }
 
 #canvas {

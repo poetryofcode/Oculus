@@ -219,3 +219,66 @@ dd {
 #canvas {
   background-color: transparent;
 }
+
+.top__plus {
+  position: absolute;
+  color: white;
+  height: 44px;
+  width: 44px;
+  border-radius: 40px;
+  transition: width 0.5s;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  box-shadow:
+    inset 2px 2px 1px 0 rgba(255, 255, 255, 0.3),
+    inset -2px -2px 2px 1px rgba(255, 255, 255, 0.3),
+    0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top__plus:hover {
+  width: 185px;
+  transition: width 0.5s;
+}
+
+.top__plus-decor {
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  left: 5px;
+  background-color: #fff;
+  color: darkblue;
+}
+
+.top__plus-text {
+  white-space: nowrap;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  left: 50px;
+  top: 14px;
+}
+
+.top__plus:hover .top__plus-text {
+  opacity: 1;
+}
+
+.top__plus-one {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+.top__plus-two {
+  position: absolute;
+  left: 60px;
+  bottom: 70px;
+}
